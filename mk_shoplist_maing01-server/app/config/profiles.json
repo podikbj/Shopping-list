@@ -1,0 +1,87 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities", "AsidExecutives", "AsidLicenseOwner", "Public"],
+    "useCaseMap": {
+    }
+  },
+  "*": {
+    "profileList": ["Authorities", "Executives", "Public", "Readers", "AwidInitiator", "AwidLicenseOwner", "Authenticated"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["created", "assigned"],
+        "profileList": ["AwidLicenseOwner", "AwidInitiator"]
+      },
+      "sys/uuAppWorkspace/load": {
+        "sysStateList": ["active"],
+        "profileList": ["Authenticated"]
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "sysStateList": ["active"],
+        "profileList": ["Public"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["created"],
+        "profileList": ["Public", "AwidLicenseOwner"]
+      },
+      "shoppingItem/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingItem/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingItem/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingItem/updateVisibility": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities"]
+      },  
+      "shoppingList/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingList/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Readers", "Authorities", "Executives"]
+      },
+      "shoppingList/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingList/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingList/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Readers", "Authorities", "Executives"]
+      },
+      "shoppingList/addItem": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingList/removeItem": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingList/getItemsByListId": {
+        "sysStateList": ["active"],
+        "profileList": ["Readers", "Authorities", "Executives"]
+      },
+      "shoppingList/deleteItemsByListId": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities", "Executives"]
+      },
+      "shoppingList/updateVisibility": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities"]
+      }      
+    }
+  }
+}

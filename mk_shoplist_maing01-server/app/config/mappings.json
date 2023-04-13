@@ -1,0 +1,101 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/ShoplistMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/load": {
+        "realization": "api/controllers/ShoplistMainController.load",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/uuAppWorkspace/loadBasicData": {
+        "realization": "api/controllers/ShoplistMainController.loadBasicData",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "shoppingItem/create": {
+        "realization": "api/controllers/ShoppingItemController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingItem/update": {
+        "realization": "api/controllers/ShoppingItemController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingItem/delete": {
+        "realization": "api/controllers/ShoppingItemController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingItem/updateVisibility": {
+        "realization": "api/controllers/ShoppingItemController.updateVisibility",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingList/create": {
+        "realization": "api/controllers/ShoppingListController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingList/get": {
+        "realization": "api/controllers/ShoppingListController.get",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "shoppingList/update": {
+        "realization": "api/controllers/ShoppingListController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingList/delete": {
+        "realization": "api/controllers/ShoppingListController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingList/list": {
+        "realization": "api/controllers/ShoppingListController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "shoppingList/addItem": {
+        "realization": "api/controllers/ShoppingListController.addItem",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingList/removeItem": {
+        "realization": "api/controllers/ShoppingListController.removeItem",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingList/getItemsByListId": {
+        "realization": "api/controllers/ShoppingListController.getItemsByListId",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "shoppingList/deleteItemsByListId": {
+        "realization": "api/controllers/ShoppingListController.deleteItemsByListId",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "shoppingList/updateVisibility": {
+        "realization": "api/controllers/ShoppingListController.updateVisibility",
+        "httpMethod": "POST",
+        "type": "CMD"
+      }
+    }
+  }
+}

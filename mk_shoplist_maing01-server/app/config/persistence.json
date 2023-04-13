@@ -1,0 +1,23 @@
+{
+  "maxNoa": 100,
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "shoplistMain": {
+          "realization": "dao/ShoplistMainMongo",
+          "maxNoi": 1
+        },
+        "shoppingItem": {
+          "realization": "dao/ShoppingItemMongo",
+          "maxNoi": 100
+        },
+        "shoppingList": {
+          "realization": "dao/ShoppingListMongo",
+          "maxNoi": 100
+        }
+      }
+    }
+  }
+}
